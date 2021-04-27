@@ -29,6 +29,6 @@ class MovieCell: UITableViewCell {
         rate.text = "\(movie.rate)"
         let types = movie.types.map{$0.rawValue}
         type.text = types.joined(separator: ", ")
-        imageMovie?.image = UIImage(named: movie.image)
+        imageMovie?.image = movie.image
     }
 }
